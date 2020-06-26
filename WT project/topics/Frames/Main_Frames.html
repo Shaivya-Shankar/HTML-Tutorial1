@@ -1,0 +1,94 @@
+<html>
+	<head>
+	<title>Frames</title>
+	<style>
+		pre{
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  margin-bottom: 10px;
+  overflow: auto;
+  width: auto;
+  padding: 5px;
+  background-color: #f5f5f5;
+  color:#088da5;
+  width: 650px!ie7;
+  padding-bottom: 20px!ie7;
+  max-height: 600px;
+}
+
+	</style>
+	</head>
+	<body background = "files/bg2.jpg">
+		<center><h1 style="color:#990066">HTML Frames</h1></center>
+		<hr width = "250" height="5">
+		<br>
+		<ol type="1">
+			<h2><li>Iframe : </li></h2>
+			<h3>The &lt;iframe&gt; tag defines a rectangular region within the document in which the browser can display a separate document, including scrollbars and borders. An inline frame is used to embed another document within the current HTML document.</h3>
+			<h2 style="color:Red">Example</h2>
+			<iframe src = "files/abc.html" width = "500" height = "200"></iframe>
+			<h2 style="color:blue">Iframe Syntax</h2>
+			<h2>An HTML iframe is defined with the &lt;iframe&gt; tag:</h2>
+			<pre>&lt;iframe src = "URL"&gt;&lt;/iframe&gt;</pre>
+			<h3>The "src" attribute specifies the URL (web address) of the inline frame page.</h3>
+			<hr>
+			<h2 style="color:blue">Iframe - Set Height and Width</h2>
+			<h2>Use the height and width attributes to specify the size of the iframe.
+				The attribute values are specified in pixels by default, but they can also be in percent (like "80%").</h2>
+			<h2 style="color:red">Example</h2>
+			<iframe src = "files/hw.html" width = "600" height = "300"></iframe>
+			<h3 style="color:green">Code :</h3>
+			<pre>&lt;iframe src = "files/hw.html" width = "600" height="300"&gt;&lt;/iframe&gt;
+<center><h4 style="color:green">OR</h4></center>
+&lt;iframe src="files/hw.html" style="height:300px;width:600px;"&gt;&lt;/iframe&gt;</pre>
+			<hr>
+			<h2 style="color:blue">Iframe - Remove the Border</h2>
+			<h2>By default, an iframe has a border around it. To remove the border, add the "style" attribute and use the CSS "border" property:</h2>
+			<h2 style="color:red">Example</h2>
+			<iframe src = "files/bo.html" width = "600" height = "300" style="border:none;"></iframe>
+			<h3 style="color:green">Code :</h3>
+			<pre>&lt;iframe src="bo.html" style="border:none;"&gt;&lt;/iframe&gt;</pre>
+			<hr>
+			<h2 style="color:blue">Iframe - Adding the Border</h2>
+			<h2>With CSS, you can also change the size, style and color of the iframe's border:</h2>
+			<iframe src = "files/ab.html" width = "600" height = "300" style="border:2px solid red;"></iframe>
+			<h3 style="color:green">Code :</h3>
+			<pre>&lt;iframe src="ab.html" style="border:2px solid red;"&gt;&lt;/iframe&gt;</pre>
+			<hr>
+			<h2 style="color:blue">Iframe - Target for a Link</h2>
+			<h2>An iframe can be used as the target frame for a link. The "target" attribute of the link must refer to the "name" attribute of the iframe:</h2>
+			<h2 style="color:red">Example</h2>
+			<iframe src="files/target.html" name="iframe_a"></iframe>
+			<p><a href="files/clicked.html" target="iframe_a">Click Me !!!</a></p>
+			<h3 style="color:green">Code :</h3>
+			<pre>&lt;iframe src="files/target.html" name="iframe_a"&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="files/clicked.html" target="iframe_a"&gt;Click Me !!!&lt;/a&gt;&lt;/p&gt;</pre>
+			<center><h2 style="color:brown">End of Iframe</h2></center>
+			<hr>
+			<h2><li>Framset : </li></h2>
+			<h3>HTML frames are used to divide your browser window into multiple sections where each section can load a separate HTML document. A collection of frames in the browser window is known as a frameset. The window is divided into frames in a similar way the tables are organized: into rows and columns.</h3>
+			<h2 style="color:red">Example</h2>
+			<iframe src = "files/frameset.html" width="700" height="300"></iframe>
+			<h3 style="color:green">Code :</h3>
+			<pre>&lt;frameset cols="30%,*,30%"&gt;
+	&lt;frame src = "a.html"&gt;
+	&lt;frame src = "b.html"&gt;
+	&lt;frame src = "c.html"&gt;
+&lt;/frameset&gt;</pre>
+			<h2>This Window is Resizable...</h2>
+			<hr>
+			<h2 style="color:blue">Frameset - Noresize Property</h2>
+			<h2>The "noresize" Property is used to block the Frame resizing by the User.</h2>
+			<h2 style="color:red">Example</h2>
+			<iframe src = "files/frameset2.html" width="700" height="300"></iframe>
+			<h3 style="color:green">Code :</h3>
+			<pre>&lt;frameset cols="30%,*,30%"&gt;
+	&lt;frame src = "a.html" noresize&gt;
+	&lt;frame src = "b.html" noresize&gt;
+	&lt;frame src = "c.html" noresize&gt;
+&lt;/frameset&gt;</pre>
+			<h2>This Window is Non - Resizable...</h2>
+			<center><h2 style="color:brown">End of Frameset</h2></center>
+			<hr>
+		</ol>
+	</body>
+</html>

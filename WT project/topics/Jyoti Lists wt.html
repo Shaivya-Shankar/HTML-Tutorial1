@@ -1,0 +1,302 @@
+<!doctype>
+<html>
+<head>
+<style>
+h1 {
+    color: red;
+    font-family: times new roman;
+    font-size: 300%;
+
+}
+p  {
+    color: black;
+    font-family: comic sans;
+    font-size: 200%;
+}
+
+table,th,td{
+border:1px solid black;
+font-size: 130%
+}
+
+
+ul {
+font:30px "times new roman",san-serif;
+}
+
+ol {
+font:30px "times new roman",san-serif;
+}
+
+li {
+    color: red;
+}
+li span {
+    color: black;
+}
+dl{
+font:30px "times new roman",san-serif;
+}
+
+dt {
+    color: red;
+}
+dd {
+    color: black;
+}
+xmp{
+    
+    color: blue;
+    font-family: times new roman;
+    font-size: 150%;
+}
+u{
+color:red;
+}
+
+</style>
+</head>
+<body>
+<h1 style="font-size:60px;"><center>HTML Lists </center></h1>
+<p>HTML Lists are used to specify lists of information. All lists may contain one or more list elements. There are three different types of HTML lists:</p>
+<ol>
+<li>Ordered List or Numbered List (ol)</li>
+<li>Unordered List or Bulleted List (ul)</li>
+<li>Description List or Definition List (dl)</li>
+</ol>
+<h2 style="font-size:40px;">HTML Ordered List or Numbered List</h2>
+<p>HTML Ordered List or Numbered List displays elements in numbered format. The HTML ol tag is used for ordered list. There can be different types of numbered list:</p>
+<ul style="list-style-type:disc">
+<li>Numeric Number (1, 2, 3)</li>
+<li>Capital Roman Number (I II III)</li>
+<li>Small Romal Number (i ii iii)</li>
+<li>Capital Alphabet (A B C)</li>
+<li>Small Alphabet (a b c)</li>
+</ul>
+<p>To represent different ordered lists, there are 5 types of attributes in this tag.</p>
+<table >
+<tr>
+  <th>Type</th>
+  <th>Description</th>
+</tr>
+<tr>
+  <td>Type "1"</td>
+  <td>This is the default type. In this type, the list items are numbered with numbers.</td>
+</tr>
+<tr>
+  <td>Type "I"</td>
+  <td>In this type, the list items are numbered with upper case roman numbers.</td>
+</tr>
+<tr>
+  <td>Type "i"</td>
+   <td>In this type, the list items are numbered with lower case roman numbers.</td>
+</tr>
+<tr>
+  <td>Type "A"</td>
+  <td>In this type, the list items are numbered with upper case letters.</td>
+</tr>
+<tr>
+  <td>Type "a"</td>
+  <td>In this type, the list items are numbered with lower case letters.</td>
+</tr>
+</table>
+<h3 style="font-size:30px;">ol type="I"</h3>
+<p>Here is an example to display list in roman number uppercase.</p>
+<xmp>
+<ol type="I">  
+ <li>HTML</li>  
+ <li>Java</li>  
+ <li>JavaScript</li>  
+ <li>SQL</li>  
+</ol>
+</xmp>
+<p>Output:</p>
+<ol type="I">  
+ <li>HTML</li>  
+ <li>Java</li>  
+ <li>JavaScript</li>  
+ <li>SQL</li>  
+</ol>  
+<h3 style="font-size:30px;">ol type="I"</h3> 
+<p>Here is an example to display list in roman number lowercase.</p>
+<xmp>
+<ol type="i">  
+ <li>HTML</li>  
+ <li>Java</li>  
+ <li>JavaScript</li>  
+ <li>SQL</li>  
+</ol>  
+</xmp>
+<p>Output:</p>
+<ol type="i">  
+ <li>HTML</li>  
+ <li>Java</li>  
+ <li>JavaScript</li>  
+ <li>SQL</li>  
+</ol>  
+<h3 style="font-size:30px;">ol type="A"</h3> 
+<p>Here is an example to display list in alphabet uppercase.</p>
+<xmp>
+<ol type="A">  
+ <li>HTML</li>  
+ <li>Java</li>  
+ <li>JavaScript</li>  
+ <li>SQL</li>  
+</ol>  
+</xmp>
+<p>Output:</p>
+<ol type="A">  
+ <li>HTML</li>  
+ <li>Java</li>  
+ <li>JavaScript</li>  
+ <li>SQL</li>  
+</ol>  
+<h3 style="font-size:30px;">ol type="a"</h3> 
+<p>Here is an  example to display list in alphabet lowercase.</p>
+<xmp>
+<ol type="a">  
+ <li>HTML</li>  
+ <li>Java</li>  
+ <li>JavaScript</li>  
+ <li>SQL</li>  
+</ol>  
+</xmp>
+<p>Output:<p>
+<ol type="a">  
+ <li>HTML</li>  
+ <li>Java</li>  
+ <li>JavaScript</li>  
+ <li>SQL</li>  
+</ol>  
+
+<h2 style="font-size:40px;">HTML Unordered List or Bulleted List</h2>
+
+<p>HTML Unordered List or Bulleted List displays elements in bulleted format. The HTML ul tag is used for the unordered list. There can be 4 types of bulleted list:</p>
+
+<ul style="list-style-type:circle">
+<li>disc</li>
+<li>circle</li>
+<li>square</li>
+<li>none</li>
+</ul>
+
+<p>To represent different ordered lists, there are 4 types of attributes in this tag</p>
+
+<table>
+<tr>
+ <th>Type</th>
+ <th>Description</th>
+</tr>
+<tr>
+ <td>Type "disc"</td>
+ <td>This is the default style. In this style, the list items are marked with bullets.</td>
+</tr>
+<tr>
+  <td>Type "circle"</td>
+  <td>In this style, the list items are marked with circles.</td>
+</tr>
+<tr>
+ <td>Type "square"</td>
+ <td>In this style, the list items are marked with squares.</td>
+</tr>
+<tr>
+  <td>Type "none"</td>
+  <td>In this style, the list items are not marked .</td>
+</tr>
+</table>
+
+<h3 style="font-size:30px;">ul type="circle"</h3>
+
+<xmp>
+<ul type="circle">  
+ <li>HTML</li>  
+ <li>Java</li>  
+ <li>JavaScript</li>  
+ <li>SQL</li>  
+</ul>  
+</xmp>
+
+<p>Output:</p>
+<ul type="circle">  
+ <li>HTML</li>  
+ <li>Java</li>  
+ <li>JavaScript</li>  
+ <li>SQL</li>  
+</ul>  
+
+<h3 style="font-size:30px;">ul type="square"</h3>
+
+<xmp>
+<ul type="square">  
+ <li>HTML</li>  
+ <li>Java</li>  
+ <li>JavaScript</li>  
+ <li>SQL</li>  
+</ul>  
+</xmp>
+
+<p>Output:</p>
+
+<ul type="square">  
+ <li>HTML</li>  
+ <li>Java</li>  
+ <li>JavaScript</li>  
+ <li>SQL</li>  
+</ul>  
+
+<h3 style="font-size:30px;">ul type="none"</h3>
+
+<xmp>
+<ul type="none">  
+ <li>HTML</li>  
+ <li>Java</li>  
+ <li>JavaScript</li>  
+ <li>SQL</li>  
+</ul>  
+</xmp>
+
+<p>Output:</p>
+<ul type="none">  
+ <li>HTML</li>  
+ <li>Java</li>  
+ <li>JavaScript</li>  
+ <li>SQL</li>  
+</ul>  
+
+<h2 style="font-size:40px;">HTML Description List or Definition List</h2>
+<p>HTML Description list is also a list style which is supported by HTML and XHTML. It is also known as definition list where entries are listed like a dictionary or encyclopedia.<break>
+
+The definition list is very appropriate when you want to present glossary, list of terms or other name-value list.<break>
+
+The HTML definition list contains following three tags:</p>
+<ol type="1">
+   <li><xmp><dl></xmp> tag defines the start of the list.</li>
+   <li><xmp><dt></xmp> tag defines a term.</li>
+   <li><xmp><dd></xmp> tag defines the term definition (description).</li>
+</ol>
+
+<xmp>
+<dl>  
+  <dt>Aries</dt>  
+  <dd>-One of the 12 horoscope sign.</dd>  
+  <dt>Bingo</dt>  
+  <dd>-One of my evening snacks</dd>  
+ <dt>Leo</dt>  
+ <dd>-It is also an one of the 12 horoscope sign.</dd>  
+  <dt>Oracle</dt>  
+  <dd>-It is a multinational technology corporation.</dd>   
+</dl>  
+</xmp>
+
+<p>Output</p>
+<dl>  
+  <dt>Aries</dt>  
+  <dd>-One of the 12 horoscope sign.</dd>  
+  <dt>Bingo</dt>  
+  <dd>-One of my evening snacks</dd>  
+ <dt>Leo</dt>  
+ <dd>-It is also an one of the 12 horoscope sign.</dd>  
+  <dt>Oracle</dt>  
+  <dd>-It is a multinational technology corporation.</dd>   
+</dl>  
+

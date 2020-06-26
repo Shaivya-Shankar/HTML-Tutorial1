@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Stylesheet</title>
+</head>
+<body>
+<pre>
+<font color="green" size="3">
+<h1><font color="red"face="lucida sans typewriter"><marquee><u>CASCADING STYLE SHEETS TUTORIAL</u></marquee></font></h1>
+Styling HTML with CSS
+CSS stands for Cascading Style Sheets.
+
+CSS describes how HTML elements are to be displayed on screen, paper, or in other media.
+
+CSS saves a lot of work. It can control the layout of multiple web pages all at once.
+
+CSS can be added to HTML elements in 3 ways:
+
+<u>Inline</u> - by using the style attribute in HTML elements
+<u>Internal </u>- by using a style element in the head section
+<u>External </u>- by using an external CSS file
+The most common way to add CSS, is to keep the styles in separate CSS files. <br>
+However, here we will use inline and internal styling, because this is easier to demonstrate, and easier for you to try it yourself.
+
+<u><b>Tip: You can learn much more about CSS in our CSS Tutorial.</b></u>
+</font>
+
+<h2><b><font color="blue">Inline CSS</font></b></h2>
+<p>
+<font color="green">An inline CSS is used to apply a unique style to a single HTML element.
+
+An inline CSS uses the style attribute of an HTML element.</font>
+</p>
+<font face="Monotype corsiva" size="4">This example sets the text color of the element to<font color="blue"> <u>blue:</u></font></font>
+
+<font color="violet"><h3><b><u>Example</u></b></h3></font>
+<textarea id="anything" rows="2" cols="52" readonly>
+<h1 style="color:blue;">This is a Blue Heading</h1>
+</textarea> 
+
+
+<h2><b><font color="blue">Internal CSS</font></b></h2>
+<font color="green">An internal CSS is used to define a style for a single HTML page.
+
+An internal CSS is defined in the head section of an HTML page, within a style element:
+</p>
+</font>
+
+<font color="violet"><h3><b><u>Example</u></b></h3></font>
+<textarea id="anything" rows="17" cols="60" readonly>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: red;}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+</textarea>
+<h2><b><font color="blue">External CSS</font></b></h2>
+<font color="green"><pre>An external style sheet is used to define the style for many HTML pages.
+
+With an external style sheet, you can change the look of an entire web site, by changing one file!
+
+To use an external style sheet, add a link to it in the <head> section of the HTML page:
+</pre>
+</font>
+<font color="violet"><h3><b><u>Example</u></b></h3></font>
+<textarea id="anything" rows="16" cols="60" readonly>
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+</textarea>
+<font face="monotype corsiva">An external style sheet can be written in any text editor.<br> The file must not contain any HTML code, and must be saved with a .css extension.<br>
+
+Here is how the "styles.css" looks:
+</font>
+<textarea id="anything" rows="10" cols="50" readonly>
+body {
+    background-color: powderblue;
+}
+h1 {
+    color: blue;
+}
+p {
+    color: red;
+}
+</textarea>
+<h2><b><u><font color="blue">CSS Fonts</font></u></b></h2>
+The CSS color property defines the text color to be used.
+
+The CSS font-family property defines the font to be used.
+
+The CSS font-size property defines the text size to be used.
+<font color="violet"><h3><b><u>Example</u></b></h3></font>
+
+<textarea id="anything" rows="24" cols="60" readonly>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+    color: blue;
+    font-family: verdana;
+    font-size: 300%;
+}
+p  {
+    color: red;
+    font-family: courier;
+    font-size: 160%;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+</textarea>
+<h2><b><u><font color="blue">CSS Border</font></u></b></h2>
+The CSS border property defines a border around an HTML element:
+
+<font color="violet"><h3><b><u>Example</u></b></h3></font>
+<textarea id="anything" rows="4" cols="60"readonly>
+p {
+    border: 1px solid powderblue;
+}
+</textarea>
+<font color="blue"><h2><b><u>CSS Padding</u></b></h2></font>
+The CSS padding property defines a padding (space) between the text and the border:
+
+<font color="violet"><h4><b><u>Example</u></b></h4></font>
+<textarea id="anything" rows="5" cols="60" readonly>
+p {
+    border: 1px solid powderblue;
+    padding: 30px;
+}
+</textarea>
+<font color="blue"><h2><b><u>CSS Margin</u></b></h2></font>
+The CSS margin property defines a margin (space) outside the border:
+
+<font color="violet"><h3><b><u>Example</u></b></h3></font>
+<textarea id="anything"rows="6" cols="60" readonly>
+p {
+    border: 1px solid powderblue;
+    margin: 50px;
+}
+</textarea>
+<font color="blue"><h2><b><u>The id Attribute</u></b></h2></font>
+To define a specific style for one special element, add an id attribute to the element:
+<textarea id="anything" rows="1" cols="50" readonly>
+<p id="p01">I am different</p>
+</textarea>
+then define a style for the element with the specific id:
+
+<font color="violet"><h3><b><u>Example</u></b></h3></font>
+<textarea id="anything"rows="8" cols="60" readonly>
+#p01 {
+    color: blue;
+}
+<h2><font color="powderblue"><u>Note: The id of an element should be unique within a page, so the id selector is used to select one unique element!</u></font></h3>
+</textarea>
+<font color="blue"><h2><b><u>The class Attribute</u></b></h2></font>
+<b><font color="red">To define a style for special types of elements, add a class attribute to the element:</font></b>
+<textarea id="anything"rows="2" cols="50" readonly>
+<p class="error">I am different</p>
+</textarea>
+then define a style for the elements with the specific class:
+
+<font color="violet"><h3><b><u>Example</u></b></h3></font>
+<textarea id="anything"rows="4" cols="40" readonly>
+p.error {
+    color: red;
+}
+</textarea>
+<font color="blue">External References</font>
+External style sheets can be referenced with a full URL or with a path relative to the current web page.
+
+This example uses a full URL to link to a style sheet:
+
+<font color="violet"><h3><b><u>Example</u></b></h3></font>
+<textarea id="anything"rows="3" cols="60" readonly>
+<link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+</textarea>
+This example links to a style sheet located in the html folder on the current web site:
+
+<font color="violet"><h3><b><u>Example</u></b></h3></font>
+<textarea id="anything" rows="3" cols="60" readonly>
+<link rel="stylesheet" href="/html/styles.css">
+</textarea>
+This example links to a style sheet located in the same folder as the current page:
+
+<font color="violet"><h3><b><u>Example</u></b></h3></font>
+<textarea id="anything" rows="3" cols="60" readonly>
+<link rel="stylesheet" href="styles.css">
+</textarea>
+<h1><u><font color="green"><marquee>You can read more about file paths in the chapter HTML File Paths</marquee></font></u></h1>
+
+<h2><font color="blue">Chapter Summary</font></h2>
+<ul style="list-style-type:disc">
+<li>Use the HTML <textarea id="anything"rows="1" cols="5" readonly>style</textarea>attribute for inline styling</li>
+<li>Use the HTML <textarea id="anything"rows="1" cols="6" readonly><style> </textarea>element to define internal CSS</li>
+<li>Use the HTML<textarea id="anything" rows="1" cols="6"readonly><link> </textarea>element to refer to an external CSS file</li>
+<li>Use the HTML<textarea id="anything" rows="1" cols="6"readonly> <head> </textarea>element to store<textarea id="anything" rows="1" cols="7" readonly> <style></textarea> and <textarea id="anything"rows="1" cols="5" readonly><link></textarea> elements</li>
+<li>Use the CSS <textarea id="anything" rows="1" cols="5"readonly>color</textarea>property for text colors</li>
+<li>Use the CSS <textarea id="anything" rows="1" cols="10"readonly>font-family </textarea>property for text fonts</li>
+<li>Use the CSS <textarea id="anything"rows="1" cols="8" readonly>font-size</textarea> property for text sizes</li>
+<li>Use the CSS <textarea id="anything" rows="1" cols="5"readonly>border </textarea>property for borders</li>
+<li>Use the CSS <textarea id="anything" rows="1" cols="5"readonly>padding</textarea> property for space inside the border</li>
+<li>Use the CSS <textarea id="anything" rows="1" cols="5" readonly>margin</textarea> property for space outside the border</li>
+<font face="verdana" color="brown"><p><b>Prepared by:-
+Shamit Roy Chowdhury
+Roll no.-1728099
+Section-CSSE-2
+Branch-Computer Science and System Engineering</b></p>
+<hr>
+<marquee><font color="orange" size="6">Thank you !!</font></marquee>
+<hr>
+</pre>
+</body>
+</html>

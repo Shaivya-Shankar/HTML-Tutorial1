@@ -1,0 +1,120 @@
+<html>
+<body>
+<style>
+h1 {
+    color: red;
+    font-family: times new roman;
+    font-size: 300%;
+
+}
+p  {
+    color: black;
+    font-family: times new roman;
+    font-size: 160%;
+}
+ul {
+font:30px "times new roman",san-serif;
+}
+
+li {
+    color: red;
+}
+li span {
+    color: black;
+}
+dl{
+font:30px "times new roman",san-serif;
+}
+
+dt {
+    color: red;
+}
+dd {
+    color: black;
+}
+xmp{
+    
+    color: blue;
+    font-family: times new roman;
+    font-size: 110%;
+}
+u{
+color:red;
+}
+
+</style>
+<h1 style="font-size:60px;"><center>HTML Links </center></h1>
+
+<p style="text-align:justify">A webpage can contain various links that take you directly to other pages and even specific parts of a given page. 
+These links are known as hyperlinks.</p>
+<p style="text-align:justify">The HTML anchor tag defines a hyperlink that links one page to another page.
+ The "href" attribute is the most important attribute of the HTML a tag.
+A link is specified using HTML tag<a>. 
+This tag is called anchor tag and anything between the opening <a> tag and the closing </a> tag becomes part of the link and a user can click that part to reach to the linked document. 
+</p>
+
+<h3 style="font-size:40px;">HTML Links - Syntax</h3>
+<h5 style="font-size:30px;">Example</h5>
+<xmp>
+<a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+</xmp>
+
+<h3 style="font-size:40px;">Appearance of HTML anchor tag</h3>
+<ul style="list-style-type:disc">
+<li><span>An unvisited link is displayed underlined and blue.</span></li>
+
+<li><span>A visited link displayed underlined and purple.</span></li>
+
+<li><span>An active link is underlined and red.</span></li>
+</ul>
+
+<h3 style="font-size:40px;">HTML - Image Links</h3>
+
+<p style="text-align:justify">HTML img tag is used to display image on the web page. 
+HTML img tag is an empty tag that contains attributes only, closing tags are not used in HTML image element.
+</p>
+
+<h4 style="font-size:40px;">Attributes of HTML img tag</h4>
+<p style="text-align:justify">The src and alt are important attributes of HTML img tag. All attributes of HTML image tag are given below.
+</p>
+<dl>
+<dt>1) src </dt>
+<dd> It is a necessary attribute that describes the source or path of the image. It instructs the browser where to look for the image on the server.
+
+The location of image may be on the same directory or another server.<dd>
+
+<dt>2) alt </dt>
+<dd>The alt attribute defines an alternate text for the image, if it can't be displayed. The value of the alt attribute describe the image in words. The alt attribute is considered good for SEO prospective.
+</dd>
+<dt>3) width </dt>
+<dd>It is an optional attribute which is used to specify the width to display the image. It is not recommended now. You should apply CSS in place of width attribute.
+</dd>
+<dt>4) height </dt>
+<dd>It specifies the height of the image. The HTML height attribute also supports iframe, image and object elements. It is not recommended now. You should apply CSS in place of height attribute.
+</dd>
+
+<h5 style="font-size:30px;">Example</h5>
+<xmp>
+<h2>HTML Image Example</h2>  
+<img src="good_morning.jpg" alt="Good Morning Friends"/>  
+</xmp>
+
+<h5 style="font-size:40px;">The Most Important Anchor Attributes</h5>
+There are three anchor attributes you need to know to create functional hyperlinks. 
+These attributes are <u>href</u>, <u>target</u>, and <u>download</u>.
+
+  
+
+<h5 style="font-size:40px;">Chapter Summary</h5>
+<ul style="list-style-type:disc">
+<li><span>Use the <xmp> <a> </xmp>element to define a link</span></li>
+<li><span>Use the <u> href </u>attribute to define the link address</span></li>
+<li><span>Use the  <u> target </u> attribute to define where to open the linked document</span></li>
+<li><span>Use the <xmp> <img>  </xmp>element (inside <xmp><a> </xmp>) to use an image as a link</span></li>
+<li><span>Use the <u>id  </u>attribute (id="value") to define bookmarks in a page</span></li>
+<li><span>Use the <u> href  </u> attribute (href="#value") to link to the bookmark</span></li>
+
+
+
+</body>
+</html>
